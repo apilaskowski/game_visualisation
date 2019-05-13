@@ -1,0 +1,10 @@
+.floor {
+    position: relative;
+    z-index: 1;
+}
+.human {
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 0;
+}
