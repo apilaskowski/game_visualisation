@@ -1,0 +1,11 @@
+W tym problemie twoim jedynym zadaniem jest dotrzec do wyjscia postacia.
+Dostepne instrukcje to:
+
+* move_right()
+* move_down()
+* move_left()
+* move_up()
+
+Przy probie wejscia w sciane przegrasz gre i bedzisz musial grac od nowa.
+
+Gdy dotrzesz do wyjscia to wygrasz grę.
