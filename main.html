@@ -1,15 +1,56 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="pl-PL">
 <head>
+    <meta charset="UTF-8">
+
+    <script src="codemirror-5.46.0/lib/codemirror.js"></script>
+    <script src="codemirror-5.46.0/mode/javascript/javascript.js"></script>
+
+    <link type="text/css" href="codemirror-5.46.0/lib/codemirror.css" rel="stylesheet">
+    <link type="text/css" href="codemirror-5.46.0/theme/mbo.css" rel="stylesheet">
     <link type="text/css" href="main.css" rel="stylesheet">
 </head>
 <body>
     
     <!-- <p><button onclick="renderFloor()">Click Me</button></p>  -->
-    <p><button onclick="main()">Click Me Too</button></p>
 
-    <div id="map"></div>
+    <div class="page-body">
+        <div class="container">
+            <div class="description">
+                <object class="desc" width="1024" height="256" charset="UTF-8" data="problem_description/problem1.txt" border="0"></object>
+            </div>
+        </div>
+        <div class="container space-evenly">
+            <div class="dropdown">
+                <button class="dropbtn">Select Level</button>
+                <div class="dropdown-content">
+                    <a href="#">Level 1</a>
+                </div>
+            </div>
+            <div class="dropdown"></div>
+        </div>
 
+        <div class="container">
+            <div id="map" class="item"></div>
+            <div>
+                <div id="editor" class="item"></div>
+                <div class="button-container">
+                    <button class="button" onclick="sth();main()">Submit Code</button>
+                    <!-- <button class="button" onclick="">Submit Code 2</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="images/banners/logosy.png"/>
+            </div>
+        </div>
+    </div>
+    
     <script type="text/javascript" src="main.js"></script>
+    <script>
+        window.onload = function() {render_starting();};
+        run_editor();
+    </script>
 </body>
 </html>
